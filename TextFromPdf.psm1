@@ -121,7 +121,6 @@ Function Get-TextFromPDF {
             $text = $text -replace ",", "."
             $text = $text -replace "·", "."
             $text = $text -replace "-", "."
-            $text = $text -replace "ㄣ", "5"
             $text = $text -replace "'", " "
 
             # Spaces and new lines
