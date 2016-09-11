@@ -1,6 +1,6 @@
 # TextFromPdf - PowerShell module for extracting text from PDF.
 
-This module can be used to extract text from a PDF. Currently, it only contains a single function that traverses a PDF line-by-line and uses a RuleSet passed as a parameter to extract particular bits of information. It's set up to be used to extract the total, vat, date, and time from receipts.
+This module can be used to extract text from a PDF. Currently, it only contains a single function that traverses a PDF line-by-line and uses a RuleSet passed as a parameter to extract particular bits of information. It's set up to extract the total, vat, date, and time from receipts.
 
 ### Available Functions
 
@@ -10,12 +10,12 @@ This module can be used to extract text from a PDF. Currently, it only contains 
 
 ### Examples
 
-#### Extract the total, tax, date, and time from a receipt
+##### Extract the total, tax, date, and time from a receipt
 ```powershell
 Get-TextFromPDF -Path 'c:\temp\receipt01.pdf'
 ```
 
-#### Use a custom RuleSet to extract information
+##### Use a custom RuleSet to extract information
 ```powershell
 $ruleSet = @(
     [pscustomobject]@{
