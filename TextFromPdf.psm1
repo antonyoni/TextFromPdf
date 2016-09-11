@@ -16,7 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ################################################################################
 
-Function getTextFromLocation ($page, $x, $y, $w, $h) {
+Function Global:getTextFromLocation ($page, $x, $y, $w, $h) {
     $boundingBox = New-Object iText.Kernel.Geom.Rectangle($x, $y, $w, $h) # x, y, width, height
     $filter = New-Object iText.Kernel.Pdf.Canvas.Parser.Filter.TextRegionEventFilter($boundingBox)
     $strategy = New-Object iText.Kernel.Pdf.Canvas.Parser.Listener.FilteredTextEventListener(
